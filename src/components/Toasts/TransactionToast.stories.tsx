@@ -121,11 +121,13 @@ const tokens = [
     chainId: 4,
   },
   {
-    name: "Dachshund",
-    address: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
-    decimals: 9,
-    symbol: "DHI",
     chainId: 4,
+    address: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
+    name: "Dachshund",
+    symbol: "DHI",
+    decimals: 9,
+    logoURI:
+      "https://raw.githubusercontent.com/aonhac/airswap-web/develop/public/images/DHI.png",
   },
 ];
 
