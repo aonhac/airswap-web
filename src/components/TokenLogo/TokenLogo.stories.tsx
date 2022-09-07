@@ -21,10 +21,10 @@ const Grid = styled.div`
 `;
 
 const airSwapTokenInfo: TokenInfo = {
-  symbol: "AST",
-  address: "0x27054b13b1b798b345b591a4d22e6562d47ea75a",
-  chainId: 1,
-  decimals: 4,
+  symbol: "DHI",
+  address: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
+  chainId: 4,
+  decimals: 9,
   logoURI:
     "https://assets.coingecko.com/coins/images/1019/thumb/AST.png?1547034939",
   name: "AirSwap",
