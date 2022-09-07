@@ -121,11 +121,11 @@ const tokens = [
     chainId: 4,
   },
   {
-    name: "AirSwap Token",
-    address: "0x04bEa9FCE76943E90520489cCAb84E84C0198E29",
-    decimals: 4,
-    symbol: "AST",
-    chainId: 137,
+    name: "Dachshund",
+    address: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
+    decimals: 9,
+    symbol: "DHI",
+    chainId: 4,
   },
 ];
 
