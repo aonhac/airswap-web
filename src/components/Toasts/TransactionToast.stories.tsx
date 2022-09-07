@@ -85,6 +85,27 @@ const transactions: SubmittedTransaction[] = [
     status: "reverted",
     timestamp: 1628840166870,
   } as SubmittedTransaction,
+  {
+    type: "Order",
+    protocol: "request-for-quote",
+    order: {
+      expiry: "1628840464",
+      nonce: "1628840164346",
+      signerWallet: "0xE6fDF902a9CB2C443FCc84723d7aaaaaaBCc27F5",
+      signerToken: "0xc778417e063141139fce010982780140aa0cd5ab",
+      signerAmount: "10009999999999998",
+      protocolFee: "7",
+      senderWallet: "0x73580000000000000000000000000000000bcBE5",
+      senderToken: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
+      senderAmount: "10000000000000000",
+      r: "0x32fcfd8d0fdd8cbf1087f296511755fb6525ddd577b1178eebc69ea041c0721c",
+      s: "0x65ae2d37ef4a8b3694c443d15579b0ee1720392581a3f181414c3289cb1fa7b8",
+      v: "27",
+    },
+    hash: "0xa2deb952611401755d9a6f648b81f323f9d3a0c768f6de053c99cef1042d3a68",
+    status: "reverted",
+    timestamp: 1628840166870,
+  } as SubmittedTransaction,
 ];
 
 const tokens = [
@@ -121,13 +142,12 @@ const tokens = [
     chainId: 4,
   },
   {
-    chainId: 4,
+    name: "Dachshund Inu",
     address: "0x4CA716086504447923EFbF5e85dDF05E23446C5A",
-    name: "Dachshund",
-    symbol: "DHI",
     decimals: 9,
-    logoURI:
-      "https://raw.githubusercontent.com/aonhac/airswap-web/develop/public/images/DHI.png",
+    symbol: "DHI",
+    chainId: 4,
+    logoURI: "https://github.com/aonhac/airswap-web/blob/develop/public/images/DHI.png",
   },
 ];
 
@@ -138,7 +158,7 @@ TransactionSuccess.args = {
   transaction: transactions[0],
   type: "Order",
   senderToken: tokens[0],
-  signerToken: tokens[3],
+  signerToken: tokens[4],
 };
 
 export const TransactionFail = Template.bind({});
@@ -148,7 +168,7 @@ TransactionFail.args = {
   transaction: transactions[0],
   type: "Order",
   senderToken: tokens[0],
-  signerToken: tokens[3],
+  signerToken: tokens[4],
 };
 
 export const ApprovalSuccess = Template.bind({});
